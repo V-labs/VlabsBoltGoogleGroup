@@ -50,7 +50,7 @@ class Extension extends \Bolt\BaseExtension
         <script type="text/javascript">
             document.getElementById("forum_embed").src =
             "https://groups.google.com/forum/embed/?place=forum/%forum-name%" +
-            "&showsearch=%showsearch%&showtabs=%showtabs%&hideforumtitle=%hideforumtitle%&hidesubject=%hidesubject%&fragments=%fragments%";
+            "&showsearch=%showsearch%&showtabs=%showtabs%&hideforumtitle=%hideforumtitle%&hidesubject=%hidesubject%&fragments=%fragments%&parenturl=" + encodeURIComponent(window.location.href);
         </script>
 EOM;
 
